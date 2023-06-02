@@ -53,7 +53,7 @@ Careers
                 <h5 class="card-title" style="color: rgb(0, 0, 0);">Python Developer</h5>
                 <h6 style="color: rgb(129, 129, 129);">(0-2)year experience</h6>
                 <h6 style="color: rgb(129, 129, 129);">10+ openings</h6>
-                <a href=""><button class="btn btn-sm mt-lg-2 mb-0 " type="button" style="color: blueviolet;" >Apply now</button></a>
+                <a href="{% url 'jobdetails' %}"><button class="btn btn-sm mt-lg-2 mb-0 " type="button" style="color: blueviolet;" >Apply now</button></a>
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@ Careers
     <div class="row mt-5 mb-5">
       <div class="col-lg-4"></div>
       <div class="col-lg-4">
-        <center><a href="{% url 'services' %}"><button class="btn sp" type="button" style="color: blueviolet; border: solid 1px;" >All Openings</button></a></center>
+        <!-- <center><a href="{% url 'services' %}"><button class="btn sp" type="button" style="color: blueviolet; border: solid 1px;" ></button></a></center> -->
       </div>
       <div class="col-lg-4"></div>
     </div>
@@ -97,6 +97,11 @@ Careers
 
 <section>
   <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="text-center mt-5 mb-3" style="color: blueviolet;">Life at TechMate...</h3>
+      </div>
+    </div>
     <div class="row row1 mt-5 mb-5">
       <div class="col-lg-2"></div>
 
@@ -126,7 +131,7 @@ Careers
         
        </div> 
        <div class="row mt-3 mb-3">
-        <center><a href="{% url 'services' %}"><button class="btn sp" type="button" style="color: blueviolet; border: solid 1px;" >View All</button></a></center>
+        <center><a href="{% url 'gallery' %}"><button class="btn sp" type="button" style="color: blueviolet; border: solid 1px;" >View All</button></a></center>
        </div>
 
       </div>
@@ -155,11 +160,11 @@ Careers
       <div class="col-lg-3 col-md-3">
         <h5 class="text-title" style="color: rgb(0, 0, 0);margin-top: 50px;">Quick links</h5>
         <ul>
-          <li style="color: rgb(0, 0, 0);"><a href="/" style="color: rgb(0, 0, 0);text-decoration: none;">Home</a></li>
-          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;">About Us</a></li>
-          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;">Contact Us</a></li>
-          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;">Services</a></li>
-          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;">Blogs</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="{% url 'home' %}" style="color: rgb(0, 0, 0);text-decoration: none;">Home</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="{% url 'aboutus' %}" style="color: rgb(0, 0, 0);text-decoration: none;">About Us</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="{% url 'contactus' %}" style="color: rgb(0, 0, 0);text-decoration: none;">Contact Us</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="{% url 'services' %}" style="color: rgb(0, 0, 0);text-decoration: none;">Services</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="{% url 'gallery' %}" style="color: rgb(0, 0, 0);text-decoration: none;">Gallery</a></li>
         </ul>
       </div>
       <div class="col-lg-3 col-md-3">
