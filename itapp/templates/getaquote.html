@@ -1,0 +1,223 @@
+{% extends 'navbar.html' %}
+
+{% load static %}
+
+{% block title %}
+TechMate
+{% endblock %}
+
+
+{% block body %}
+
+<section>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <center><h2 style="color: blueviolet;">Want our Service ?</h2></center>
+                <p class="text-center">Please fill the form, we will reach you as soon as possible.</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form">
+                            <input type="text" class="form-control mt-3" style="border: solid 1px blueviolet;" placeholder="Full Name">
+                            <input type="email" class="form-control mt-3" style="border: solid 1px blueviolet;" placeholder="Email">
+                            <input type="number" class="form-control mt-3" style="border: solid 1px blueviolet;" placeholder="Phone Number">
+                            <textarea rows="10" class="form-control mt-3" style="border: solid 1px blueviolet;" placeholder="About Project"></textarea>
+                            <center><a href="{% url 'services' %}"><button class="btn sp  mt-3 mb-3" type="button" style="color: blueviolet; border: solid 1px;" >Submit</button></a></center>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <h4 class="text-center" style="color: blueviolet;">Choose Service</h4>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-lg-6">
+                                <div class="form-check mt-3 mb-3" >
+                                    <input class="form-check-input" type="checkbox" value="" style="color: blueviolet;border-color: blueviolet;" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Web Development
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" style="color: blueviolet;border-color: blueviolet;" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      Mobile App Development
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" style="color: blueviolet;border-color: blueviolet;" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      Ecommerce Development
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" style="color: blueviolet;border-color: blueviolet;" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      Graphics Designing
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" style="color: blueviolet;border-color: blueviolet;" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      Digital Marketing
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" style="color: blueviolet;border-color: blueviolet;" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      2D and 3D Animations
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-check mt-3 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" style="color: blueviolet;border-color: blueviolet;" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      Cloud Solutions
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" style="color: blueviolet;border-color: blueviolet;" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      SEO Optimization
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" style="color: blueviolet;border-color: blueviolet;" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      Data Analysis
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" style="color: blueviolet;border-color: blueviolet;" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      Cyber Security
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" style="color: blueviolet;border-color: blueviolet;" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        It Maintenance
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" style="color: blueviolet;border-color: blueviolet;" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        It consulting
+                                    </label>
+                                </div>
+                                <div class="form-check mt-4 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" style="color: blueviolet;border-color: blueviolet;" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Editing
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+</section>
+
+
+<hr>
+<section id="sectionlast">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 col-md-2"></div>
+      <div class="col-lg-3 col-md-3">
+        <h5 class="text-title" style="color: rgb(0, 0, 0);margin-top: 50px;">Quick links</h5>
+        <ul>
+          <li style="color: rgb(0, 0, 0);"><a href="/" style="color: rgb(0, 0, 0);text-decoration: none;">Home</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;">About Us</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;">Contact Us</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;">Services</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;">Blogs</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <h5 class="text-title" style="color: rgb(0, 0, 0);margin-top: 50px;">Contact</h5>
+        <ul>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;"><i class="bi bi-geo m-2"></i>Kochi,Kerala</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;"><i class="bi bi-telephone m-2"></i>0481-0772255</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;"><i class="bi bi-instagram m-2"></i><i class="bi bi-facebook m-2"></i><i class="bi bi-twitter m-2"></i><i class="bi bi-linkedin m-2"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <h5 class="text-title" style="color: rgb(0, 0, 0);margin-top: 50px;">Connect with Us</h5>
+       
+        <p style="color: rgb(0, 0, 0);"><p style="color: rgb(0, 0, 0);text-decoration: none;">Subscribe our email for <br>more updates </p></p>
+        <p style="color: rgb(0, 0, 0);">
+          <nav class="navbar">
+            <div class="container-fluid" style="background: transparent;">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" style="color: blueviolet;border: solid 1px;" placeholder="Email" aria-label="Search">
+                <button class="btn sp" type="button" style="color: blueviolet; border: solid 1px;">Subscribe</button>
+              </form>
+            </div>
+            
+          </nav>
+        </p>
+               
+        
+      </div>
+      <div class="col-lg-1 col-md-1"></div>
+    </div>
+  </div>
+
+
+  <div class="card-footer" style="height: 45px; background-color: rgb(245, 245, 245);">
+    <p class="text-center" style="color: blueviolet;"><i class="fa fa-copyright"></i>TechMate.com | All rights reserved | techmate@gmail.com</p>
+  </div>
+
+</section> 
+
+<style>
+
+    .card1{
+      transition: box-shadow 0.3s ease-in-out;
+    }
+      
+    .card1:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          
+    }
+      
+    button.sp{
+      transition: box-shadow 0.3s ease-in-out;
+    }
+      
+      
+    button.sp:hover{
+      transform: scale(1.05);
+          
+          
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      
+    }
+    div.box img{
+      opacity: .7;
+    }
+      
+    div.box img:hover{
+      opacity: 1;
+      box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5); 
+    }
+          
+  </style>
+  
+
+
+
+
+{% endblock %}

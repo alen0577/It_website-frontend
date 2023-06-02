@@ -1,0 +1,332 @@
+{% extends 'navbar.html' %}
+
+{% load static %}
+
+{% block title %}
+TechMate-Home
+{% endblock %}
+
+
+{% block body %}
+<section>
+    <div class="container mt-5 mb-3">
+        {% include 'carousel.html' %}
+    </div>
+    
+</section>
+
+<section>
+    <div class="container mt-5 mb-3">
+        <div class="row">
+            <div class="col-lg-12">
+              <center><h3 class="header mt-3 mb-3" style="color: blueviolet;">Our Services</h3></center>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <p class="text-body" style="text-align: justify;">
+                    We are a friendly bunch of young dynamic and smart working professionals with such a wide variety of capabilities who work
+                    closely with clients to make everything from websites to print materials look professional unified and beautiful. 
+                    By combining people, creativity, and technology, we help deliver the most innovative web solutions for businesses. 
+                    No matter which service you choose, the idea behind our approach is always the same – to help you simplify the process of getting your dreams into reality.
+                </p>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card card1 h-100  p-3 mb-5 bg-body-tertiary rounded">
+                        <div class="card-body">
+                          <h1 style="color: blueviolet"><i class="fa fa-code"></i></h1>
+                          <h5 class="card-title" style="color: rgb(0, 0, 0);">Web Development</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card1 h-100  p-3 mb-5 bg-body-tertiary rounded">
+                          <div class="card-body">
+                            <h1 style="color:blueviolet"><i class="fa fa-mobile-android"></i></h1>
+                            <h5 class="card-title" style="color: rgb(0, 0, 0)">Mobile App Development</h5>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card1 h-100 p-3 mb-5 bg-body-tertiary rounded">
+                          <div class="card-body">
+                            <h1 style="color: blueviolet"><i class="fa fa-cart-shopping"></i></h1>
+                            <h5 class="card-title" style="color: rgb(0, 0, 0);">Ecommerce Development</h5>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card1 h-100 p-3 mb-5 bg-body-tertiary rounded">
+                          <div class="card-body">
+                            <h1 style="color: blueviolet"><i class="fa fa-pencil-ruler"></i></h1>
+                            <h5 class="card-title" style="color: rgb(0, 0, 0)">Graphic Designing</h5>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card1 h-100  p-3 mb-5 bg-body-tertiary rounded">
+                          <div class="card-body">
+                            <h1 style="color: blueviolet"><i class="fas fa-chart-line"></i></h1>
+                            <h5 class="card-title" style="color: rgb(0, 0, 0)">Digital Marketing</h5>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card1 h-100  p-3 mb-5 bg-body-tertiary rounded">
+                          <div class="card-body">
+                            <h1 style="color: blueviolet"><i class="fa fa-magic-wand-sparkles "></i></h1>
+                            <h5 class="card-title" style="color: rgb(0, 0, 0)">2D and 3D Animation</h5>
+                          </div>
+                        </div>
+                    </div>
+                    
+      
+                </div>
+                
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <center><a href="{% url 'services' %}"><button class="btn sp" type="button" style="color: blueviolet; border: solid 1px;" >All Services</button></a></center>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <center><h3 class="header mt-3 mb-4" style="color: blueviolet;">Our Clients</h3></center>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <p class="text-body" style="text-align: justify;">Our extensive knowledge in multiple industries and renowned presence
+          across the world enable us to understand our clients and to establish an enduring partnership.
+          Our team is highly professional, responsive, and goes above and beyond to meet our clients IT needs. 
+          Our team of experts took the time to understand our clients unique requirements and delivered tailored solutions that perfectly fit their business. 
+        </p>
+
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-10">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="box">
+                <img src="{% static 'images/c1.svg' %}" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="box">
+                <img src="{% static 'images/c2.svg' %}" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="box">
+                <img src="{% static 'images/c3.svg' %}" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="box">
+                <img src="{% static 'images/c4.svg' %}" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-lg-3">
+              <div class="box">
+                <img src="{% static 'images/c5.svg' %}" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="box">
+                <img src="{% static 'images/c6.svg' %}" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="box">
+                <img src="{% static 'images/c7.svg' %}" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="box">
+                <img src="{% static 'images/c8.svg' %}" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+  </div>
+
+</section>
+
+<section id="section5" style="background-color: rgb(255, 255, 255);">
+  <div class="row mt-5 mb-3">
+    <div class="col-lg-12">
+      <center><h3 class="text-center mt-3 mb-5" style="color: blueviolet;">Testimonials</h3></center>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-3">
+        <div class="card card1  p-3 mb-5 bg-body-tertiary rounded">
+          <div class="card-body cd">
+            <h5 class="card-title" style="color: blueviolet;"><i class="bi bi-chat-left-quote-fill"></i></h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-body-secondary">-Client1-</small></p>
+          </div>
+        </div>
+      
+      </div>
+      <div class="col-lg-3">
+        <div class="card card1  p-3 mb-5 bg-body-tertiary rounded">
+          <div class="card-body cd">
+            <h5 class="card-title" style="color: blueviolet;" ><i class="bi bi-chat-left-quote-fill"></i></h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-body-secondary">-Client2-</small></p>
+          </div>
+        </div>
+      
+      </div>  
+      <div class="col-lg-3">
+        <div class="card card1  p-3 mb-5 bg-body-tertiary rounded">
+          <div class="card-body cd">
+            <h5 class="card-title" style="color: blueviolet;"><i class="bi bi-chat-left-quote-fill"></i></h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-body-secondary">-Client3-</small></p>
+          </div>
+        </div>
+      
+      </div>      
+      <div class="col-lg-1"></div>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+
+
+<hr>
+<section id="sectionlast">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 col-md-2"></div>
+      <div class="col-lg-3 col-md-3">
+        <h5 class="text-title" style="color: rgb(0, 0, 0);margin-top: 50px;">Quick links</h5>
+        <ul>
+          <li style="color: rgb(0, 0, 0);"><a href="/" style="color: rgb(0, 0, 0);text-decoration: none;">Home</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;">About Us</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;">Contact Us</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;">Services</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;">Blogs</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <h5 class="text-title" style="color: rgb(0, 0, 0);margin-top: 50px;">Contact</h5>
+        <ul>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;"><i class="bi bi-geo m-2"></i>Kochi,Kerala</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;"><i class="bi bi-telephone m-2"></i>0481-0772255</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;"><i class="bi bi-instagram m-2"></i><i class="bi bi-facebook m-2"></i><i class="bi bi-twitter m-2"></i><i class="bi bi-linkedin m-2"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <h5 class="text-title" style="color: rgb(0, 0, 0);margin-top: 50px;">Connect with Us</h5>
+       
+        <p style="color: rgb(0, 0, 0);"><p style="color: rgb(0, 0, 0);text-decoration: none;">Subscribe our email for <br>more updates </p></p>
+        <p style="color: rgb(0, 0, 0);">
+          <nav class="navbar">
+            <div class="container-fluid" style="background: transparent;">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" style="color: blueviolet;border: solid 1px;" placeholder="Email" aria-label="Search">
+                <button class="btn sp" type="button" style="color: blueviolet; border: solid 1px;">Subscribe</button>
+              </form>
+            </div>
+            
+          </nav>
+        </p>
+               
+        
+      </div>
+      <div class="col-lg-1 col-md-1"></div>
+    </div>
+  </div>
+
+
+  <div class="card-footer" style="height: 45px; background-color: rgb(245, 245, 245);">
+    <p class="text-center" style="color: blueviolet;"><i class="fa fa-copyright"></i>TechMate.com | All rights reserved | techmate@gmail.com</p>
+  </div>
+
+</section> 
+
+
+
+
+
+
+
+<style>
+ 
+
+  .card1{
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .card1:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+  }
+
+  button.sp{
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+
+  button.sp:hover{
+    transform: scale(1.05);
+    
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+  }
+  div.box img{
+    opacity: .7;
+  }
+
+  div.box img:hover{
+    opacity: 1;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5); 
+  }
+  
+
+
+
+
+</style>
+{% endblock %}
